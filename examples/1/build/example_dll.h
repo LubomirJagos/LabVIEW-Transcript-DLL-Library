@@ -14,6 +14,7 @@ extern "C" {
 long EXAMPLE_DLL LVSubVI_Double(long number_in );
 void EXAMPLE_DLL _stdcall LVSubVI_CppFunc();
 
+
 #ifdef __cplusplus
 }
 #endif
