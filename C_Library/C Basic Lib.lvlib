@@ -4,6 +4,11 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Item Name="printf.vi" Type="VI" URL="../printf.vi"/>
 	<Item Name="puts.vi" Type="VI" URL="../puts.vi"/>
+	<Item Name="scanf fractional number.vi" Type="VI" URL="../scanf fractional number.vi"/>
+	<Item Name="scanf natural number.vi" Type="VI" URL="../scanf natural number.vi"/>
+	<Item Name="scanf string.vi" Type="VI" URL="../scanf string.vi"/>
+	<Item Name="scanf.vi" Type="VI" URL="../scanf.vi"/>
 	<Item Name="Translator C Basic Lib.vi" Type="VI" URL="../Translator C Basic Lib.vi"/>
 </Library>

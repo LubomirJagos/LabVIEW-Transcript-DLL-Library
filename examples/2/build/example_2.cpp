@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string>
 #include "example_2.h"
+#include <vector>
+#include <cstring>
 #define String string
 using namespace std;
 long LVSubVI_Double(long number_in = 0){
@@ -51,6 +53,7 @@ long LVSubVI_Double(long number_in = 0){
     
     return number_out;
 } //SubVI not locked auto-generated call
+using namespace std;
 void LVSubVI_CppFunc(){
     /*feedback and shift regs. declarations */
     
