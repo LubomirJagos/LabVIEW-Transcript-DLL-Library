@@ -11,10 +11,7 @@ extern "C" {
 #define EXAMPLE_DLL __declspec(dllimport)
 #endif
 
-long EXAMPLE_DLL LVSubVI_Double(long number_in );
-void EXAMPLE_DLL _stdcall LVSubVI_CppFunc();
-long EXAMPLE_DLL LVSubVI_Sqaure_Number(long number_in );
-long EXAMPLE_DLL LVSubVI_sign(long number_in );
+
 
 
 #ifdef __cplusplus
