@@ -4,19 +4,50 @@
 #include <vector>
 #define String string
 using namespace std;
-void LVSubVI_lowpass1(double* array_in, int sizeIn1, double* array_out){
+void LVSubVI_lowpass1(double* SignalInput = 0,int elementsCount = 0,double* SigalOutput = 0){
     /*feedback and shift regs. declarations */
+    vector<vector<double>> shiftRegister_2403;
+    bool shiftRegisterInitBool_2403 = true;
     
     /* END feedback and shift regs declarations */
     vector<double> wireUID_3888_;
-    vector<double> wireUID_2152_ = vector<double>(sizeIn1, 42);
-    for (int i = 0; i < sizeIn1; i++){
-      wireUID_2152_[i] =  array_in[i];
-    }
-
+    long wireUID_4267_;
+    double* wireUID_2880_ = SigalOutput;
+    vector<double> wireUID_2152_;
+    vector<double> wireUID_2461_ = vector<double>();
+    int wireUID_2113_ = elementsCount;
+    double* wireUID_2349_ = SignalInput;
     long wireUID_1500_;
     /* Don't know how to translate class "Generic ->GObject ->Node ->Structure ->MultiFrameStructure ->DisableStructure": "Diagram Disable Structure" */
     /* Don't know how to translate class "Generic ->GObject ->Node ->Structure ->MultiFrameStructure ->DisableStructure": "Diagram Disable Structure" */
+    /**** BEGIN ForLoop *****/
+    
+    int iteratorUID_2019 = 0; //loop iterator
+    for (int LVHardcodedCnt = 0;  LVHardcodedCnt < wireUID_2113_; LVHardcodedCnt++){
+        if (shiftRegisterInitBool_2403){
+            shiftRegister_2403.push_back(wireUID_2461_);
+            shiftRegisterInitBool_2403 = false;
+        } // shift regs
+        /*feedback and shift regs. declarations */
+        
+        /* END feedback and shift regs declarations */
+        vector<double> wireUID_2466_ = shiftRegister_2403.front(); shiftRegister_2403.erase(shiftRegister_2403.begin());
+        vector<double> wireUID_2397_;
+        double wireUID_2361_specialWire;
+        long wireUID_2127_ = iteratorUID_2019 /*Diagram owned wire terminal*/;
+        double* wireUID_2047_ = wireUID_2349_;
+        wireUID_2361_specialWire = wireUID_2047_[wireUID_2127_];
+        wireUID_2397_.insert(wireUID_2397_.end(), wireUID_2466_.begin(), wireUID_2466_.end());
+        wireUID_2397_.insert(wireUID_2397_.end(), wireUID_2361_specialWire);
+        
+        
+         /* C code*/
+        
+        shiftRegister_2403.push_back(wireUID_2397_); /* output assignements */
+        iteratorUID_2019++; //iterator increment
+    }
+    wireUID_2152_ = shiftRegister_2403.front();
+    /***** END ForLoop ******/
     wireUID_1500_ = wireUID_2152_.size();
     /**** BEGIN ForLoop *****/
     vector<vector<double>> feedbackNode_844;
@@ -68,9 +99,9 @@ void LVSubVI_lowpass1(double* array_in, int sizeIn1, double* array_out){
         /*feedback and shift regs. declarations */
         
         /* END feedback and shift regs declarations */
+        double wireUID_1283_;
         vector<double> wireUID_862_A;
         vector<double> wireUID_865_ = vector<double>();
-        double wireUID_1283_;
         double wireUID_1286_;
         double wireUID_1289_;
         double wireUID_1292_;
@@ -273,8 +304,50 @@ void LVSubVI_lowpass1(double* array_in, int sizeIn1, double* array_out){
     }
     
     /***** END ForLoop ******/
-    for (int i = 0; i < wireUID_3888_.size(); i++){
-      array_out[i] = wireUID_3888_[i];
-    }    
+    wireUID_4267_ = wireUID_3888_.size();
+    /**** BEGIN ForLoop *****/
+    
+    int iteratorUID_4193 = 0; //loop iterator
+    for (int LVHardcodedCnt = 0;  LVHardcodedCnt < wireUID_4267_; LVHardcodedCnt++){
+     // shift regs
+        /*feedback and shift regs. declarations */
+        
+        /* END feedback and shift regs declarations */
+        double wireUID_4392_;
+        long wireUID_4286_ = iteratorUID_4193 /*Diagram owned wire terminal*/;
+        vector<double> wireUID_4368_ = wireUID_3888_;
+        double* wireUID_4237_ = wireUID_2880_;
+        wireUID_4392_ = wireUID_4368_[wireUID_4286_];
+        wireUID_4237_[wireUID_4286_] = wireUID_4392_;
+        
+        
+         /* C code*/
+        
+         /* output assignements */
+        iteratorUID_4193++; //iterator increment
+    }
+    
+    /***** END ForLoop ******/
+    
+    
+    
 } //SubVI not locked auto-generated call
 
+void example_4(){
+    /*feedback and shift regs. declarations */
+    
+    /* END feedback and shift regs declarations */
+    long wireUID_700_ = 3;
+    double* wireUID_606_ = 0;
+    double* wireUID_553_ = 0;
+    LVSubVI_lowpass1(wireUID_606_,wireUID_700_,wireUID_553_);
+    
+    
+    
+}
+
+void setup(){
+    example_4();
+}
+void loop(){
+}
